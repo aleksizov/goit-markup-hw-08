@@ -1,0 +1,59 @@
+.workers {
+    background-color: var(--third-bgc-color);
+}
+
+.personal-card {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-card__item {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
+}
+
+.personal-card__img {
+    width: 100%;
+}
+
+.personal-card__text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.personal-card__name {
+
+    margin-bottom: 10px;
+
+    color: var(--color-h);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.personal-card__position {
+
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 16px;
+}

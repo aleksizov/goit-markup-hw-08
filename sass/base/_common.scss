@@ -1,0 +1,27 @@
+body {
+
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.second-section {
+    background-color: var(--second-bgc);
+}

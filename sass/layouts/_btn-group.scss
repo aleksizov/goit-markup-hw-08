@@ -1,0 +1,49 @@
+.portfolio__btn-group {
+    margin-bottom: 40px;
+
+    @include tablet {
+        margin-bottom: 30px;
+    }
+
+    @include desktop {
+        margin-bottom: 50px;
+    }
+}
+
+.btn-group {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    @include tablet {
+        @include flex($jc: center, $ai: null)
+    }
+}
+
+.btn-group__btn {
+
+    padding: 6px 22px;
+    text-align: center;
+
+    color: var(--color-h);
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    transition-property: color, background-color, box-shadow;
+    transition: var(--main-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--white-color-text);
+        background-color: var(--accent);
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+}

@@ -1,0 +1,44 @@
+.address {
+    color: var(--white-color-text);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.address__text {
+    margin-bottom: 9px;
+}
+
+.address .address__link {
+    display: inline-block;
+}
+
+.address__link {
+    color: rgba(255, 255, 255, 0.6);
+
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    transition: color var(--main-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent);
+    }
+}

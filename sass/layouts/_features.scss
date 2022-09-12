@@ -1,0 +1,55 @@
+.signed-svg {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    // @include tablet{
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+}
+
+.signed-svg__item {
+    width: 100%;
+
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
+}
+
+.signed-svg__icon {
+    height: 120px;
+    background-color: var(--third-bgc-color);
+    margin-bottom: 30px;
+    @include flex($jc: center);
+    border-radius: 4px;
+}
+
+.signed-svg__title {
+
+    margin-bottom: 10px;
+
+    color: var(--color-h);
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include tablet {
+        text-align: left;
+    }
+}
+
+.signed-svg__text {
+
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

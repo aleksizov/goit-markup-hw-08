@@ -1,0 +1,33 @@
+.social-card {
+    @include flex($jc: center, $ai: null);
+    gap: 10px;
+}
+
+.social-card__linc {
+    @include flex($jc: center);
+    width: 44px;
+    height: 44px;
+
+    background-color: transparent;
+    border-radius: 50%;
+
+    transition-property: background-color, border-radius, box-shadow;
+    transition: var(--main-transition);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent);
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+}
+
+.social-card__svg {
+    fill: var(--icon-colour);
+
+    transition: fill var(--main-transition);
+
+    .social-card__linc:hover &,
+    .social-card__linc:focus & {
+        fill: var(--white-color-text);
+    }
+}

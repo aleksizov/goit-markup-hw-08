@@ -1,0 +1,43 @@
+.logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.logo-list__item {
+    width: calc((100% - 30px) / 2);
+    height: 92px;
+
+    @include tablet {
+        width: calc((100% - 60px) / 3);
+    }
+
+    @include desktop {
+        width: calc((100% - 150px) / 6);
+    }
+}
+
+.logo-list__linc {
+    width: 100%;
+    height: 100%;
+    @include flex($jc: center);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: fill var(--main-transition);
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+    }
+}
+
+.logo-list__icon {
+    fill: var(--icon-colour);
+
+    transition: fill var(--main-transition);
+
+    .logo-list__linc:hover &,
+    .logo-list__linc:focus & {
+        fill: var(--accent);
+    }
+}
