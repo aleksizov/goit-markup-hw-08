@@ -9,6 +9,7 @@
   --third-bgc-color: #F5F4FA;
   --icon-colour: #AFB1B8;
   --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 section {
@@ -1267,6 +1268,7 @@ body {
   border-radius: 4px;
   transition-property: color, background-color, box-shadow;
   transition: var(--main-transition);
+  background-color: #F5F4FA;
 }
 .btn-group__btn:hover, .btn-group__btn:focus {
   color: var(--white-color-text);

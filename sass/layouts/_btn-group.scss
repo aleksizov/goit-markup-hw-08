@@ -39,6 +39,7 @@
     border-radius: 4px;
     transition-property: color, background-color, box-shadow;
     transition: var(--main-transition);
+    background-color: #F5F4FA;
 
     &:hover,
     &:focus {
